@@ -1,0 +1,30 @@
+@import url(font-awesome.min.css);
+
+/* Wrapper */
+
+	#wrapper {
+		background-color: #39b253;
+		background-image: url("images/Coding.avif"), linear-gradient(0deg, rgba(10, 197, 10, 0.656), rgba(81, 235, 81, 0.848)), url("images/Coding.avif");
+		background-size: auto,								auto,														100% auto;
+		background-position: center,								center,														top center;
+		background-repeat: repeat,								no-repeat,													no-repeat;
+		background-attachment: fixed,								fixed,														fixed;
+	}
+
+		#wrapper.fade-in:before {
+			display: none;
+		}
+
+/* Intro */
+
+	body.is-preload #intro {
+		opacity: 1;
+	}
+
+		body.is-preload #intro:not(.hidden) + #header + #nav {
+			-moz-transform: none;
+			-webkit-transform: none;
+			-ms-transform: none;
+			transform: none;
+			opacity: 1;
+		}
